@@ -1,223 +1,47 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>LEAF UI</title>
-<link  rel="stylesheet" href="css/basic.css" />
-
-<link rel="shortcut icon" href="http://mat1.gtimg.com/www/images/favicon.ico"/>
-
-
-<script src="script/jquery-1.5.1.min.js"></script>
-<script src="script/jquery.cycle.all.js"></script>
-<script src="script/globe.js"></script>
-
-
-</head>
-
-<body>
-                    
-<div class="header">
-                              <span class="flow-btn">主页</span>
-</div>            
-                
-                
-<div class="body">           
-<div class="container">
-      <div class="leafSet">
-      
-                <div class="leaf one" id="part1">
-                          <div class="top">
-                              <div class="corner"></div>
-                          </div>
-                          <div class="body">
-                              
-                              <p class="search"><input type="text" class="text" name="name" id="name" value="Name" rel="Name"></p>
-                
-                          </div>
-                          <div class="bottom">
-                              <div class="corner"></div>
-                          </div>
-                </div>
-                
-                <div class="leaf one" id="part2">
-                          <div class="top">
-                              <div class="corner"></div>
-                          </div>
-                          <div class="body">
-                          
-                          <div class="iconSet">
-                              <div class="icon"><img src="images/Qadobe_004.png" /></div>
-                              <div class="icon"><img src="images/Qadobe_005.png" /></div>
-                              <div class="icon"><img src="images/Qadobe_008.png" /></div>       
-                          </div>
-                
-                          </div>
-                          <div class="bottom">
-                              <div class="corner"></div>
-                          </div>
-                </div>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <title>Hello World !</title>
+            <link href="favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" />
+            <link href="favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" />
+            <link href="favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+            <link href="animated_favicon.gif" rel="icon" type="image/gif" >
+                <link rel="stylesheet" type="text/css" href="css/main.css"/>
+                <script type="text/javascript" src="js/music.js"></script>
+    </head>
+    
+    <body>
+        
+        <!-- 添加背景音乐 -->
+        <div class="musicDiv">
+            <audio id="music" src="http://sc1.111ttt.com/2016/1/12/10/205100120121.mp3" autoplay="autoplay" loop="loop"></audio>
+        </div>
+        
+        <!-- 正文 -->
+        <div class="content">
+            <!-- 头像 -->
+            <a class="avatar" id="aTitle" href="#" title="暂停音乐" onclick="playPause()">
+                <img src="images/head03.jpg" alt="头像" >
+                    </a>
             
-                
-                <div class="leaf two" id="part5">
-                          <div class="top">
-                              <div class="corner"></div>
-                          </div>
-                          <div class="body">                                     
-                                    <audio controls="controls">
-                                        <source src="EminemLoveTheWayYouLie.mp3" />
-                                        <a href="EminemLoveTheWayYouLie.mp3">Download this file.</a>
-                                    </audio>
-                                
-                                   <marquee behavior="scroll">
-                                   EminemLoveTheWayYouLie.mp3
-                                   </marquee>
-                                   
-                                   <div class="seal">music</div>
-                          </div>
-                          <div class="bottom">
-                              <div class="corner"></div>
-                          </div>
-                </div>
-                
-                <div class="leaf two" id="part6">
-                          <div class="top">
-                              <div class="corner"></div>
-                          </div>
-                          <div class="body">
-                          
-                           <div class="iconSet">
-                              <div class="icon"><img src="images/Antique_Icon_update_001.png" /></div>
-                              <div class="icon"><img src="images/Antique_Icon_update_002.png" /></div>
-                              <div class="icon"><img src="images/Antique_Icon_update_031.png" /></div>
-                          </div>
-                
-                          </div>
-                          <div class="bottom">
-                              <div class="corner"></div>
-                          </div>
-                </div>
-      </div>
-</div>
-
-                <div class="home"><img src="images/leaf.png" /></div>
-
-<div class="container">
-      <div class="leafSet">
-      
-                <div class="leaf one" id="part3">
-                          <div class="top">
-                              <div class="corner"></div>
-                          </div>
-                          <div class="body">
-                          
-                          <div class="iconSet">
-                               <div class="stamp"><img src="images/stamp.png" /></div>
-                          </div>
-                         
-                          <div class="tips"><a href="#" class="orange">3 NEW</a><br /> Messages</div>
-                             
-                          </div>
-                          <div class="bottom">
-                              <div class="corner"></div>
-                          </div>
-                </div>
-                
-                <div class="leaf one" id="part4">
-                          <div class="top">
-                              <div class="corner"></div>
-                          </div>
-                          <div class="body">
-                          
-                           <div class="iconSet">
-                           <div id="sun"><img  src="images/sunshine.png" /></div>
-                           <span class="weather">武汉 晴</span>
-                           <span class="weather">18-25℃</span>
-                           </div>
-                            
-                          </div>
-                          <div class="bottom">
-                              <div class="corner"></div>
-                          </div>
-                </div>
-                
-                
-                <div class="leaf two" id="part7">
-                          <div class="top">
-                              <div class="corner"></div>
-                          </div>
-                          <div class="body">
-                          
-                                <div class="photo">
-                                    <a class="image" href="#"><img src="images/photo1.jpg" /></a>
-                                    <a class="image" href="#"><img src="images/photo2.jpg" /></a>
-                                    <a class="image" href="#"><img src="images/photo3.jpg" /></a>
-                                </div>    
-                            
-                          </div>
-                          <div class="bottom">
-                              <div class="corner"></div>
-                          </div>
-                </div>
-                
-                <div class="leaf two" id="part8">
-                          <div class="top">
-                              <div class="corner"></div>
-                          </div>
-                          <div class="body">
-                          
-                         <div class="number">⑧</div>
-                            
-                          </div>
-                          <div class="bottom">
-                              <div class="corner"></div>
-                          </div>
-                </div>
-      </div>
-</div>
-
-
-</div>
-
-
-
-
-<div class="footer" >
-                           <div class="iconSet" style=" position:relative;top:-50px;width:100%">
-                              <div class="icon"><img src="images/email.png" /></div>
-                              <div class="icon"><img src="images/music.png" /></div>
-                              <div class="icon"><img src="images/calendar.png" /></div>
-                               <div class="icon"><img src="images/rss.png" /></div>
-                              <div class="icon"><img src="images/link.png" /></div>
-                              <div class="icon"><img src="images/history.png" /></div>
-                          </div>
-
-
-</div>   
-
-
-<!--******************float*************************-->
-        <div class="float" >
-                          <div class="top">
-                              <div class="corner"></div>
-                              <div class="close"><img src="images/close.png" /></div>
-                          </div>
-                          <div class="body">
-                                     
-                          </div>
-                          <div class="bottom">
-                              <div class="corner"></div>
-                          </div>
-                </div>
-                
-                <div class="imgZoom">
-                <div class="imgTop"><div class="closeDiv"><img src="images/close.png" /></div></div>
-                <div class="imgBody"></div>
-
- 
-                </div>
-                <div id="floatBoxBg"></div>
-                
-</body>
-
+            <!-- 文字简介 -->
+            <div class="username">ruoyu Gao</div>
+            <div class="desc">Android develop, DL and RL</div>
+            
+            <!-- 外部链接 -->
+            <div class="social">
+                <a title="主页" href="https://github.com/ruoyuGao" target="_blank">
+                    <span class="iconfont icon-home"></span>
+                </a>
+                <a title="博客" href="https://blog.csdn.net/qq_38907879" target="_blank">
+                    <span class="iconfont icon-blog"></span>
+                </a>
+                <a title="微博" href="https://user.qzone.qq.com/694644246" target="_blank">
+                    <span class="iconfont icon-weibo"></span>
+                </a>
+            </div>
+        </div>
+    </body>
 </html>
+
+
